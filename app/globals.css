@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* Applies your 8-bit font globally across the whole application */
+    font-family: var(--font-pixel), monospace;
+    background-color: #0f0c1b;
+  }
+}
+
+/* Custom utility for pixel-art borders if you don't want to use standard Tailwind borders */
+.border-pixel {
+  border-style: solid;
+  border-width: 4px;
+  border-image: hwb(0 0% 100%) 4;
+}
